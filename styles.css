@@ -47,7 +47,7 @@ header{
   padding: 20px 24px;
   border-radius: 3rem;
   z-index: 1000;
-  border: 1px solid rgb(104, 7, 7);
+  border: 2px solid rgb(104, 7, 7);
 }
 
 .logo{
@@ -84,7 +84,7 @@ li a::before{
   background: linear-gradient(to right, rgb(0, 157, 255), rgb(104, 7, 7));
 }
 
-li a .visit-btn::before{
+li a.visit-btn::before{
   background: none;
 }
 
@@ -283,6 +283,10 @@ li a:hover::before{
 /* Section 5: Contact */
 .contact-section{
   margin-bottom: 100px;
+}
+
+.contact-section p{
+  margin-left: 85px;
 }
 
 .contact-section h2{
