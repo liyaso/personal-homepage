@@ -67,12 +67,12 @@ header{
   align-items: center;
 }
 
-li a{
+.nav-links li a{
   position: relative;
   font-weight: 300;
 }
 
-li a::before{
+.nav-links li a::before{
   position: absolute;
   content: '';
   width: 0;
@@ -84,11 +84,11 @@ li a::before{
   background: linear-gradient(to right, rgb(0, 157, 255), rgb(104, 7, 7));
 }
 
-li a.visit-btn::before{
+.nav-links li a.visit-btn::before{
   background: none;
 }
 
-li a:hover::before{
+.nav-links li a:hover::before{
   width: 100%;
 }
 
