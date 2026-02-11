@@ -41,17 +41,17 @@ header{
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 5rem;
+  gap: 80px;
   background-color: rgba(0, 0, 0, 0.8);
   backdrop-filter: blur(8px);
   padding: 20px 24px;
-  border-radius: 3rem;
+  border-radius: 48px;
   z-index: 1000;
   border: 2px solid rgb(104, 7, 7);
 }
 
 .logo{
-  font-size: 1.3rem;
+  font-size: 20px;
   font-weight: 600;
   text-wrap: nowrap;
   transition: 0.3s ease-in-out;
@@ -79,7 +79,7 @@ li a::before{
   left: 0;
   height: 5px;
   top: 25px;
-  border-radius: 16px;    /*1 rem = 16 px */
+  border-radius: 16px;
   transition: 0.3s ease-in-out;
   background: linear-gradient(to right, rgb(0, 157, 255), rgb(104, 7, 7));
 }
@@ -114,7 +114,7 @@ li a:hover::before{
 }
 
 .menu-icon{
-  font-size: 2rem;
+  font-size: 32px;
   display: none;
   cursor: pointer;
 }
@@ -165,6 +165,7 @@ li a:hover::before{
 
 .about-section .text{
   flex: 8;
+  font-size: 18px;
 }
 
 /* Section 3: Coursework */
@@ -184,19 +185,19 @@ li a:hover::before{
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 5rem;
+  gap: 80px;
 }
 
 .grid{
   display: grid;
   grid-template-columns: repeat(2,1fr);
-  gap: 2rem;
+  gap: 32px;
 }
 
 .grid-card{
   border: 2px solid rgb(0, 157, 255);
-  border-radius: 3rem;
-  padding: 3rem;
+  border-radius: 48px;
+  padding: 48px;
   display: flex;
   flex-direction: column;
   align-items: baseline;
@@ -209,7 +210,7 @@ li a:hover::before{
 }
 
 .grid-card span{
-  font-size: 1.5rem;
+  font-size: 24px;
   font-weight: 600;
   margin-bottom: 5px;
   color: rgb(104, 7, 7);
@@ -312,7 +313,7 @@ li a:hover::before{
   display: flex;
   flex-direction: column;
   gap: 16px;
-  margin-top: 1.5rem;
+  margin-top: 24px;
   margin-left: 150px;
   width: 50%;
 }
@@ -332,7 +333,7 @@ li a:hover::before{
 }
 
 .contact-btn i{
-  font-size: 1.2rem;
+  font-size: 20px;
   font-weight: 500;
   color: white;
 }
@@ -425,17 +426,21 @@ li a:hover::before{
   .hero-section .text h2{
     font-size: 35px;
   }
+
+  form {
+    margin: 80px;
+  }
 }
 
 @media (max-width: 740px){
   /* Header */
   header{
-    gap: 1rem;
-    padding: 1rem 1rem;
+    gap: 16px;
+    padding: 16px 16px;
   }
 
   header .logo{
-    font-size: 1rem;
+    font-size: 16px;
   }
 
   /* Section 1: Hero */
@@ -455,6 +460,10 @@ li a:hover::before{
   /* Section 4: Contact */
   .contact-section .group{
     flex-direction: column;
+  }
+
+  form {
+    margin: 80px;
   }
 }
 
@@ -480,10 +489,10 @@ li a:hover::before{
 
   .nav-links li{
     margin-top: 1.5rem;
-    padding: 1rem;
+    padding: 48px;
   }
 
-  .contact-link{              /* */
+  .contact-link{              
     display: block;
   }
 
@@ -496,7 +505,7 @@ li a:hover::before{
   }
 
   header{
-    padding: 1rem 5rem;
+    padding: 16px 80px;
     gap: 8rem;
   }
 
@@ -527,6 +536,10 @@ li a:hover::before{
     padding: 0 20px;
   }
 
+  .contact-section p{
+    margin-left: 20px;
+  }
+
   .contact-buttons{
     padding: 0.8rem;
   }
@@ -538,6 +551,10 @@ li a:hover::before{
 
   .contact-btn i{
     font-size: 1rem;
+  }
+
+  form {
+    margin: 80px;
   }
 
   /* Footer */
